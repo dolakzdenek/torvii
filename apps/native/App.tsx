@@ -21,7 +21,7 @@ export default function Native() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#2f8",
     alignItems: "center",
     justifyContent: "center",
   },
