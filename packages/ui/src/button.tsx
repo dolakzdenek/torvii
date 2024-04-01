@@ -4,6 +4,7 @@ import {
   StyleSheet,
   GestureResponderEvent,
   Text,
+  Pressable,
 } from "react-native";
 
 export interface ButtonProps {
@@ -13,9 +14,9 @@ export interface ButtonProps {
 
 export function Button({ text, onClick }: ButtonProps) {
   return (
-    <TouchableOpacity style={styles.button} onPress={onClick}>
+    <Pressable style={styles.button} onPress={onClick}>
       <Text style={styles.text}>{text}</Text>
-    </TouchableOpacity>
+    </Pressable>
   );
 }
 
@@ -29,9 +30,10 @@ const styles = StyleSheet.create({
     paddingLeft: 30,
     paddingRight: 30,
     fontSize: 15,
-    backgroundColor: "#2f80ed",
+    backgroundColor: "yellowgreen",
   },
   text: {
     color: "white",
+    fontWeight: "bold",
   },
 });

@@ -5,10 +5,9 @@ import { Button } from "@repo/ui";
 export default function Native() {
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Native</Text>
+      <Text style={styles.header}>Torvii Native App</Text>
       <Button
         onClick={() => {
-          console.log("Pressed!");
           alert("Pressed!");
         }}
         text="Boop"
@@ -21,7 +20,6 @@ export default function Native() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#2f8",
     alignItems: "center",
     justifyContent: "center",
   },
