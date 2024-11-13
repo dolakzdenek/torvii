@@ -86,7 +86,6 @@ function payInvoice(parameters): typeAnnotation {
 }
 
 function handleNewWalletUpdate(walletData) {
-  //console.log(walletData)
   storage.set('wallet', JSON.stringify(walletData))
   return walletData
 }
@@ -94,13 +93,16 @@ function handleNewWalletUpdate(walletData) {
 function LN(): JSX.Element {
   useEffect(() => {
     const wallet = getWallet()
-    if (!wallet)
+    if (!wallet) {
       LNPay.createWallet({
         user_label: 'My Test Wallet',
       })
         .then(handleNewWalletUpdate)
-        .finally(() => console.log('New wallet created'))
-        .catch(console.error)
+      .then(() => console.log('New wallet created'))
+      .finally(() => console.log('New wallet function run'))
+      .catch(console.error)
+    }
+
   }, [])
 
 

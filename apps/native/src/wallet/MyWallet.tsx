@@ -18,7 +18,7 @@ import btoa from 'btoa'
 import { getBalance, getTransactions, LN } from '../utils/LN';
 import { storage } from '../../App';
 import { getWallet } from '../helpers/functions';
-import { alpha, beta } from '../styles/theme';
+import { alpha, beta } from '@repo/ui';
 import { useNavigation } from '@react-navigation/native';
 import { atom, useAtom } from 'jotai'
 import { transactionsAtom } from './Transactions';
@@ -26,7 +26,7 @@ import { transactionsAtom } from './Transactions';
 
 function MyWallet(): JSX.Element {
   const navigation = useNavigation()
-  const [wallet, setWallet] = useState(getWallet())
+  const [wallet, setWallet] = useState(null)
   const [transactions, setTransactions] = useAtom(transactionsAtom)
 
 

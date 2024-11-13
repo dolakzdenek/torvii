@@ -19,7 +19,7 @@ import btoa from 'btoa'
 import { generateInvoice, getBalance, getTransactions, LN } from '../utils/LN';
 import { storage } from '../../App';
 import { getTransactionsLocal, getWallet } from '../helpers/functions';
-import { alpha, beta, gamma } from '../styles/theme';
+import { alpha, beta, gamma } from '@repo/ui';
 import { atom, useAtom } from 'jotai';
 
 export const transactionsAtom = atom([])

@@ -66,15 +66,15 @@ export default function App() {
       <NavigationContainer>
         <AppStack.Navigator>
           <AppStack.Screen name="Home" component={HomeScreen} options={{ headerShown: true }} />
-          {/*<AppStack.Screen name="MyWallet" component={MyWalletNavigator} options={{ headerShown: true }} />
-          <AppStack.Screen name="Settings" component={Settings} options={{ headerShown: true }} />*/}
+          <AppStack.Screen name="MyWallet" component={MyWalletNavigator} options={{ headerShown: true }} />
+          {/*<AppStack.Screen name="Settings" component={Settings} options={{ headerShown: true }} />*/}
         </AppStack.Navigator>
       </NavigationContainer>
     </SafeAreaView>
   );
 }
 
-{/*function MyWalletNavigator(): JSX.Element {
+function MyWalletNavigator(): JSX.Element {
   return (
     <MyWalletStack.Navigator>
       <MyWalletStack.Screen name="Wallet" component={MyWallet} options={{ headerShown: true }} />
@@ -83,4 +83,4 @@ export default function App() {
       <MyWalletStack.Screen name="Transactions" component={Transactions} options={{ headerShown: true }} />
     </MyWalletStack.Navigator>
   );
-}*/}
+}

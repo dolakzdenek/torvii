@@ -18,7 +18,7 @@ import btoa from 'btoa'
 import { generateInvoice, getBalance, getTransactions, LN, payInvoice } from '../utils/LN';
 import { storage } from '../../App';
 import { getWallet } from '../helpers/functions';
-import { alpha, beta, gamma } from '../styles/theme';
+import { alpha, beta, gamma } from '@repo/ui';
 import QRCode from 'react-native-qrcode-svg';
 
 
